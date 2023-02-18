@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+body
+{
+    background-color: rgb(255, 255, 254);
+}
 .mainmenu {
     padding: 0 50px;
     height: 100px;
@@ -10,13 +13,15 @@
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-}
+ 
 
+}
 .MainHead {
-    color: rgb(52, 179, 253);
+    color: rgb(255, 255, 255);
     font-size: 26px;
     text-decoration: none;
-  
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 .menu{
     list-style: none;
@@ -25,31 +30,66 @@
     align-items: center; 
 }
 .link{
-    color: rgb(255, 46, 46);
+    color: rgb(214, 214, 214);
     font-size: 20px;
     text-decoration: none;
-    margin-left: 20px; 
+    margin-left: 50px; 
+    font-family: 'Roboto';
+    font-weight: 300;
+    transition: 0.8s; 
+    text-align: center; 
 }
 .link:hover{
-    color: rgb(0, 0, 0);
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(94, 94, 94);
+   
 }
 
 .block{
+    margin: 100px auto;
     background: rgb(249, 249, 250);
     padding: 10px;
-    margin: 20px;
-
-    align-items: center;
+    border: 2px solid rgba(234, 247, 255, 0.904);
+ 
 }
 .title { 
-    font-size: 20px;
+    font-family: 'Roboto';
     font-weight: 700;
-    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(29, 29, 31);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 19px;
 }
 .description {
     font-size: 25px;
     margin-bottom: 10px;
+    margin-left: 100px;
+    color: rgb(29, 29, 31);
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-left: 36px;
+    margin-right: 36px;
 }
-.block-text {
-    margin: 0 100px;
+
+img{
+    max-width: 250px;
+    height: auto;
+    float:left; 
+    margin: 10px 10px 10px 0px;
+}
+.hover-image-scale {
+    display: inline-block; 
+    overflow: hidden; 
   }
+  .hover-image-scale img {
+    transition: 1s; 
+    display: block; 
+  }
+  .hover-image-scale img:hover {
+    transform: scale(1.2); 
+  }
+html {
+    scroll-behavior: smooth;
+    }
