@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="main_tcp_ip_style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -13,45 +13,34 @@
 </head>
 <body>
 
-    <nav class="mainmenu">
-        <a class="MainHead">TCP/IP</a>
-        <ul class="menu">
-            <li class="menu-li"><a href="#opr" class="link">Определение</a></li> 
-            <li class="menu-li"><a href="#hist" class="link">История</a></li>   
-            <li class="menu-li"><a href="#lvl" class="link">Уровни стека TCP/IP</a></li> 
-        </ul>
+ <div class = "page">
 
-    </nav>
-
-    <div class="block" id="opr">
-        <div class="title">Определение</div>
-        <div class = "hover-image-scale">
-            <a href="https://img.freepik.com/premium-vector/tcp-ip-transmission-control-protocol-internet-protocol-vector-stock-illustration_100456-9760.jpg" target="_blank"><img src = "https://img.freepik.com/premium-vector/tcp-ip-transmission-control-protocol-internet-protocol-vector-stock-illustration_100456-9760.jpg" alt = "image/tcp/ip" class="hover-image-scale"></a>
-            <div class="description"><span style = "font-weight: bold;">TCP/IP</span> — сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ передачи данных от источника информации к получателю. В модели предполагается прохождение информации через четыре уровня, каждый из которых описывается правилом (протоколом передачи). Наборы правил, решающих задачу по передаче данных, составляют стек протоколов передачи данных, на которых базируется Интернет. Название TCP/IP происходит из двух важнейших протоколов семейства — Transmission Control Protocol (TCP) и Internet Protocol (IP), которые были первыми разработаны и описаны в данном стандарте. Также изредка упоминается как модель DOD (Department of Defense) в связи с историческим происхождением от сети ARPANET из 1970-х годов (под управлением DARPA, Министерства обороны США).</div>
-            <div class="description">Набор интернет-протоколов обеспечивает сквозную передачу данных, определяющую, как данные должны пакетироваться, обрабатываться, передаваться, маршрутизироваться и приниматься. Эта функциональность организована в четыре слоя абстракции, которые классифицируют все связанные протоколы в соответствии с объёмом задействованных сетей. От самого низкого до самого высокого уровня — это уровень связи, содержащий методы связи для данных, которые остаются в пределах одного сегмента сети; интернет-уровень, обеспечивающий межсетевое взаимодействие между независимыми сетями; транспортный уровень, обрабатывающий связь между хостами; и прикладной уровень, который обеспечивает обмен данными между процессами для приложений.</div>
-            <div class="description">Развитием архитектуры Интернета и протоколов в модели TCP/IP занимается открытое международное сообщество проектировщиков IETF.</div>
+    <div class ="header">
+        <div class = "inner-header">
+            <div class ="logo_text">UDP</div>
         </div>
     </div>
-    
-    <div class="block" id="hist">
-        <div class="title">История</div> 
-        <div class = "block-text"><P class="description"><span style = "font-weight: bold;">Стек протоколов TCP/IP</span> был создан на основе NCP (Network Control Protocol) группой разработчиков под руководством Винтона Серфа в 1972 году. В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. Пакет прошёл по следующему маршруту: Сан-Франциско — Лондон — Университет Южной Калифорнии. К концу своего путешествия пакет проделал 150 тысяч км, не потеряв ни одного бита. В 1978 году Серф, Джон Постел и Дэнни Кохэн[en] решили выделить в TCP две отдельные функции: TCP и IP (англ. Internet Protocol, межсетевой протокол). TCP был ответственен за разбивку сообщения на датаграммы (англ. datagram) и соединение их в конечном пункте отправки. IP отвечал за передачу (с контролем получения) отдельных датаграмм. Вот так родился современный протокол Интернета. А с 1 января 1983 года ARPANET перешла на новый протокол. Этот день принято считать официальной датой рождения Интернета.</div>
-      </div>
-
-      <div class="block" id="lvl">
-        <div class="title">Уровни стека TCP/IP</div> 
-        <div class = "hover-image-scale">
-            <a href="https://zametkinapolyah.ru/wp-content/uploads/2018/05/01-%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D1%81%D1%82%D0%B5%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2-TCP-IP.png" target="_blank"><img src = "https://zametkinapolyah.ru/wp-content/uploads/2018/05/01-%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C-%D1%81%D1%82%D0%B5%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE%D0%B2-TCP-IP.png" alt = "image/tcp/ip_stack" class="hover-image-scale"></a>
-            <div class="description"><span style = "font-weight: bold;">Стек</span> протоколов TCP/IP включает в себя четыре уровня:</div>
-             <div><ul class="ul1">
-                <li>Прикладной уровень (Application Layer)</li>
-                <li>Транспортный уровень (Transport Layer)</li>
-                <li>Межсетевой уровень (Сетевой уровень) (Internet Layer)</li>
-                <li>Канальный уровень (Network Access Layer).</li>
-             </ul>
-             </div>
-            <div class = "description">Протоколы этих уровней полностью реализуют функциональные возможности модели OSI. На стеке протоколов TCP/IP построено всё взаимодействие пользователей в IP-сетях. Стек является независимым от физической среды передачи данных, благодаря чему, в частности, обеспечивается полностью прозрачное взаимодействие между проводными и беспроводными сетями.</div>
+    <div class ="content">
+        <div class = "inner-content">
+            МАЙН
         </div>
-      </div>
+    </div>
+    <div class = "sidebar">
+        <div class ="inner-sidebar">
+            <p>СОДЕРЖАНИЕ:</p>
+             <a href="#1">
+                <div class="sidebar_button">Определение</div>
+             </a>
+             <a href="#2">
+                <div class="sidebar_button">Служебные порты</div>
+             </a>
+             <a href="#3">
+                <div class="sidebar_button">Структура пакета</div>
+             </a>
+
+        </div>
+    </div>
+ </div>
+
 </body>
 </html>
