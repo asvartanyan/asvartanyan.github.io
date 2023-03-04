@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+.header {
+    background-color: blue;
+    margin-bottom: 10px;
+}
+.inner-header {
+    
+    height: 100px;  
+    display: flex; 
+    align-items: center; 
+}
+.content {
+    width: 70%;
+    float: right;
+}
+.inner-content {
+    background-color: rgb(1,36,86);
+    min-height: 100vh;
+}
+.sidebar {
+    width: 30%;
+    float: right;
+    padding-right: 10px;
+}
+.inner-sidebar {
+    background-color: black;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+.row {
+    display: -webkit-flex;
+    flex-direction: row;justify-content: flex-end;
+}
+.sidebar_button {
+    background-color: orange;
+    min-width: 100%;
+    color: aqua;
+    margin-top: 10px;
+    display: flex; 
+    transition: 0.8s;
+}
+.sidebar_button:hover {
+    background-color: greenyellow;
+    font-size: 36px;
+    color: white;
+}
+.logo_text {
+    margin-left: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    transition: 0.8s;
+}
+.logo_text:hover {
+    color: darkcyan;
+    font-size: 51px;
+}
+
+.content_block{
+    margin: 100px auto;
+    background: rgb(249, 249, 250);
+    padding: 10px;
+    border: 2px solid rgba(234, 247, 255, 0.904);
+}
+.title__content_block {
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(29, 29, 31);
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.nav_page {
+    background-color: black;
+    width: 30%;
+    height: 100vh;
+    overflow: auto; 
+    padding: 10px;
+}
+.description {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    color: rgb(29, 29, 31);
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+.page {
+    min-height:100%;position:relative;
+}
+.link {
+    text-decoration-line: none;
+}
+html {
+    scroll-behavior: smooth;
+    }
